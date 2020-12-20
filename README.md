@@ -1,6 +1,6 @@
 # Pymaceuticals
 
-In this challenge I used mock pharmaceutical trial data (mouse_metadata.csv & study_results.csv,"Resources") to analyze potential treatment regimens for squamous cell carcinoma (SCC). In particular, this challenge compares the performace of Pymaceuticals' drug of interest, Capomulin, to other treatment regimens.
+In this challenge I used mock pharmaceutical trial data (mouse_metadata.csv & study_results.csv, "Resources") to analyze potential treatment regimens for squamous cell carcinoma (SCC). In particular, this challenge compares the performace of Pymaceuticals' drug of interest, Capomulin, to other treatment regimens.
 
 # Instructions
 
