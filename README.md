@@ -8,6 +8,7 @@ In this challenge I used mock pharmaceutical trial data (mouse_metadata.csv & st
 - Pandas
 - Matplotlib
 - Jupyter Notebook
+- Linear Regression
 
 # Instructions
 
