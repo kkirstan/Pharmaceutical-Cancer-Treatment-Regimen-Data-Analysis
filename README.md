@@ -2,7 +2,7 @@
 
 In this analysis I used mock pharmaceutical trial data (mouse_metadata.csv & study_results.csv, "Resources") to analyze potential treatment regimens for squamous cell carcinoma (SCC). In particular, this analysis compares the performace of Pymaceuticals' drug of interest, Capomulin, to other treatment regimens.
 
-# Tools Used
+# Technology Used
 
 - Python
 - Pandas
