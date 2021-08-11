@@ -1,6 +1,6 @@
 # Pymaceuticals
 
-In this challenge I used mock pharmaceutical trial data (mouse_metadata.csv & study_results.csv, "Resources") to analyze potential treatment regimens for squamous cell carcinoma (SCC). In particular, this challenge compares the performace of Pymaceuticals' drug of interest, Capomulin, to other treatment regimens.
+In this analysis I used mock pharmaceutical trial data (mouse_metadata.csv & study_results.csv, "Resources") to analyze potential treatment regimens for squamous cell carcinoma (SCC). In particular, this analysis compares the performace of Pymaceuticals' drug of interest, Capomulin, to other treatment regimens.
 
 # Tools Used
 
@@ -12,41 +12,38 @@ In this challenge I used mock pharmaceutical trial data (mouse_metadata.csv & st
 
 # Instructions
 
-Before beginning the analysis, check the data for any mouse ID with duplicate time points and remove any data associated with that mouse ID.
+Before beginning the analysis, I checked the data for any mouse ID with duplicate time points and removed any data associated with that mouse ID. I then used the cleaned data for the remaining steps.
 
-Use the cleaned data for the remaining steps.
-
-Generate a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
+First, I generated a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
 
 ![summary table](Images/summary_table.png)
 
-Generate a bar plot using both Pandas's DataFrame.plot() and Matplotlib's pyplot that shows the total number of measurements taken for each treatment regimen throughout the course of the study.
-NOTE: These plots should look identical.
+Next, I generated a bar plot using both Pandas's DataFrame.plot() and Matplotlib's pyplot that shows the total number of measurements taken for each treatment regimen throughout the course of the study. NOTE: These plots should look identical.
 
 ![bar_plot_pandas](Images/bar_plot_pandas.png) ![bar_plot_mpl](Images/bar_plot_mpl.png)
 
-Generate a pie plot using both Pandas's DataFrame.plot() and Matplotlib's pyplot that shows the distribution of female or male mice in the study.
-NOTE: These plots should look identical.
+Then, I generated a pie plot using both Pandas's DataFrame.plot() and Matplotlib's pyplot that shows the distribution of female or male mice in the study. NOTE: These plots should look identical.
 
 ![pie_chart_pandas](Images/pie_chart_pandas.png) ![pie_chart_mpl](Images/pie_chart_mpl.png)
 
-Calculate the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. Calculate the quartiles and IQR and quantitatively determine if there are any potential outliers across all four treatment regimens.
+Then, I calculated the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. I was sure to calculate the quartiles and IQR in order to quantitatively determine any potential outliers across the four treatment regimens.
 
-Using Matplotlib, generate a box and whisker plot of the final tumor volume for all four treatment regimens and highlight any potential outliers in the plot by changing their color and style.
-Hint: All four box plots should be within the same figure. Use this Matplotlib documentation page for help with changing the style of the outliers.
+Using Matplotlib, I generated a box and whisker plot of the final tumor volume for all four treatment regimens and highlighted any potential outliers in the plot by changing their color and style.
 
 ![final_tv](Images/final_tv_box_whisker.png)
 
-Select a mouse that was treated with Capomulin and generate a line plot of tumor volume vs. time point for that mouse.
+Next, I selected a mouse that was treated with Capomulin and generated a line plot of tumor volume vs. time point for that mouse.
 
 ![line_plot](Images/line_plot.png)
 
-Generate a scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen.
+I then generated a scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen.
 
 ![scatter_plot](Images/scatter_plot.png)
 
-Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plot the linear regression model on top of the previous scatter plot.
+Finally, I calculated the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment, plotting the linear regression model on top of the previous scatter plot.
 
 ![lin_reg](Images/lin_reg.png)
 
-Look across all previously generated figures and tables and write at least three observations or inferences that can be made from the data. Include these observations at the top of notebook.
+# Final Observations 
+
+Capomulin and Ramicane appear to be the most promising drugs for treating SCC, as both drugs' average final tumor volume is about 35-36mm³. The data showed that when treated with Capomulin, tumor size decreased for all test subjects over a span of 45 days. Alternately, Ceftamin and Infubinol appeared to be far less effective, with the average final tumor volume for both equaling around 65-66mm³. The data also shows a strong, positive correlation between mouse weight and tumor volume, suggesting increased tumor size with increased weight.
